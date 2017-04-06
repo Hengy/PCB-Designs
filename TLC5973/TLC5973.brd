@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -158,8 +158,8 @@
 <wire x1="39.04" y1="0" x2="39.04" y2="22.84" width="0" layer="20"/>
 <wire x1="39.04" y1="22.84" x2="0" y2="22.84" width="0" layer="20"/>
 <wire x1="0" y1="22.84" x2="0" y2="0" width="0" layer="20"/>
-<text x="6.5" y="18.5" size="1.016" layer="21" ratio="10" rot="R270">SDI</text>
-<text x="12.5" y="3.5" size="1.016" layer="21" ratio="10" rot="R90">SDO</text>
+<text x="12.5" y="3.5" size="1.016" layer="21" ratio="10" rot="R90">SDI</text>
+<text x="6.5" y="18.5" size="1.016" layer="21" ratio="10" rot="R270">SDO</text>
 <text x="10" y="3.5" size="1.016" layer="21" ratio="10" rot="R90">GND</text>
 <text x="9" y="18.5" size="1.016" layer="21" ratio="10" rot="R270">GND</text>
 <text x="7.5" y="3.5" size="1.016" layer="21" ratio="10" rot="R90">5V</text>
