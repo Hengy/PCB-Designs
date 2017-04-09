@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -173,6 +173,9 @@
 2017</text>
 <text x="8.2" y="10.65" size="1.016" layer="21" ratio="10" rot="R90">LM3916</text>
 <text x="35.2" y="11.15" size="1.016" layer="22" ratio="10" rot="MR0">LM3916 1CH VU METER</text>
+<circle x="33.5" y="9" radius="0.2" width="0.254" layer="21"/>
+<text x="34.5" y="7" size="0.8128" layer="21" ratio="10">TLC2272
+TL972</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -1703,9 +1706,7 @@ design rules under a new name.</description>
 <elements>
 <element name="JP17" library="SparkFun-Connectors" package="1X10_LOCK" value="M10LOCK" x="7.7" y="20.15" smashed="yes"/>
 <element name="IC1" library="national-semiconductor" package="DIL18" value="LM3915N" x="19.95" y="11.65" smashed="yes"/>
-<element name="IC2" library="linear" package="SO08" value="NE5532D" x="37.2" y="12.15" smashed="yes" rot="R90">
-<attribute name="VALUE" x="40.605" y="9.087" size="1.016" layer="27" ratio="10" rot="R180"/>
-</element>
+<element name="IC2" library="linear" package="SO08" value="NE5532D" x="37.2" y="12.15" smashed="yes" rot="R90"/>
 <element name="R25" library="rcl" package="R0805" value="" x="39.2" y="10.15" smashed="yes" rot="MR270">
 <attribute name="NAME" x="37.93" y="11.785" size="1.016" layer="26" ratio="10" rot="MR270"/>
 <attribute name="VALUE" x="41.74" y="10.785" size="1.27" layer="28" rot="MR270"/>
