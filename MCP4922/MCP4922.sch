@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14299,8 +14299,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
-<part name="REFJ" library="jumper" deviceset="SJ" device=""/>
+<part name="REFJ1" library="jumper" deviceset="SJ" device=""/>
 <part name="CTRL" library="SparkFun-Connectors" deviceset="M07" device="LOCK"/>
+<part name="REFJ2" library="jumper" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14349,8 +14350,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="JP2" gate="G$1" x="132.08" y="71.12" rot="R180"/>
 <instance part="JP3" gate="G$1" x="132.08" y="25.4" rot="R180"/>
 <instance part="JP4" gate="G$1" x="132.08" y="12.7" rot="R180"/>
-<instance part="REFJ" gate="1" x="-33.02" y="88.9"/>
+<instance part="REFJ1" gate="1" x="-33.02" y="88.9"/>
 <instance part="CTRL" gate="G$1" x="15.24" y="66.04"/>
+<instance part="REFJ2" gate="1" x="-33.02" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -14669,6 +14671,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="0" y1="88.9" x2="0" y2="83.82" width="0.1524" layer="91"/>
 <junction x="0" y="83.82"/>
+<pinref part="REFJ2" gate="1" pin="2"/>
+<wire x1="-27.94" y1="96.52" x2="-10.16" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="96.52" x2="-10.16" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -14680,7 +14685,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-25.4" y1="83.82" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="83.82" x2="-25.4" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-25.4" y="83.82"/>
-<pinref part="REFJ" gate="1" pin="2"/>
+<pinref part="REFJ1" gate="1" pin="2"/>
 <wire x1="-27.94" y1="88.9" x2="-25.4" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="88.9" x2="-25.4" y2="83.82" width="0.1524" layer="91"/>
 </segment>
@@ -14692,10 +14697,14 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-48.26" y1="78.74" x2="-40.64" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="78.74" x2="-40.64" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="53.34" x2="-35.56" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="REFJ" gate="1" pin="1"/>
+<pinref part="REFJ1" gate="1" pin="1"/>
 <wire x1="-38.1" y1="88.9" x2="-40.64" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="88.9" x2="-40.64" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-40.64" y="78.74"/>
+<pinref part="REFJ2" gate="1" pin="1"/>
+<wire x1="-38.1" y1="96.52" x2="-40.64" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="96.52" x2="-40.64" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-40.64" y="88.9"/>
 </segment>
 </net>
 <net name="V+" class="0">
