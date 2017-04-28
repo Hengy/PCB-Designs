@@ -172,13 +172,11 @@
 <text x="43.2" y="18.15" size="1.016" layer="22" ratio="10" rot="MR0">Matt Hengeveld
 2017</text>
 <text x="8.2" y="10.65" size="1.016" layer="21" ratio="10" rot="R90">LM3916</text>
-<text x="27.2" y="10.15" size="1.016" layer="22" ratio="10" rot="MR0">LM3916 1CH
+<text x="24.2" y="10.15" size="1.016" layer="22" ratio="10" rot="MR0">LM3916 1CH
 VU METER</text>
 <circle x="33.5" y="9" radius="0.2" width="0.254" layer="21"/>
 <text x="34.5" y="7" size="0.8128" layer="21" ratio="10">TLC2272
 TL972</text>
-<text x="35" y="7.75" size="1.016" layer="22" ratio="10" rot="MR180">DOT</text>
-<text x="35" y="11.25" size="1.016" layer="22" ratio="10" rot="MR180">BAR</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -1741,9 +1739,9 @@ design rules under a new name.</description>
 <element name="JP17" library="SparkFun-Connectors" package="1X10_LOCK" value="M10LOCK" x="7.7" y="20.15" smashed="yes"/>
 <element name="IC1" library="national-semiconductor" package="DIL18" value="LM3915N" x="19.95" y="11.65" smashed="yes"/>
 <element name="IC2" library="linear" package="SO08" value="NE5532D" x="37.2" y="12.15" smashed="yes" rot="R90"/>
-<element name="R25" library="rcl" package="R0805" value="" x="25.35" y="3.25" smashed="yes" rot="R180">
-<attribute name="NAME" x="23.715" y="4.57" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="25.985" y="5.79" size="1.27" layer="27" rot="R180"/>
+<element name="R25" library="rcl" package="R0805" value="" x="24.35" y="3.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="22.715" y="4.52" size="1.016" layer="25" ratio="10"/>
+<attribute name="VALUE" x="24.985" y="5.74" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R26" library="rcl" package="R0805" value="" x="43.65" y="8.55" smashed="yes" rot="MR0">
 <attribute name="NAME" x="45.285" y="9.82" size="1.016" layer="26" ratio="10" rot="MR0"/>
@@ -1782,12 +1780,12 @@ design rules under a new name.</description>
 <element name="LED6" library="SparkFun-LED" package="LED-1206" value="" x="11.7" y="3.15" smashed="yes">
 <attribute name="VALUE" x="10.684" y="1.372" size="0.4064" layer="27"/>
 </element>
-<element name="C1" library="rcl" package="C0805" value="" x="19.25" y="3.25" smashed="yes" rot="R180">
-<attribute name="NAME" x="17.48" y="4.52" size="1.016" layer="25"/>
-<attribute name="VALUE" x="20.52" y="5.79" size="1.27" layer="27" rot="R180"/>
+<element name="C1" library="rcl" package="C0805" value="" x="18.25" y="3.25" smashed="yes" rot="R180">
+<attribute name="NAME" x="16.48" y="4.52" size="1.016" layer="25"/>
+<attribute name="VALUE" x="19.52" y="5.79" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="SJ1" library="jumper" package="SJ_2" value="" x="33.5" y="9" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="33.5" y="8.8999" size="0.02" layer="28" rot="MR90"/>
+<element name="SJ1" library="jumper" package="SJ_2" value="" x="30" y="11.5" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="30.1001" y="11.5" size="0.02" layer="28" rot="MR0"/>
 </element>
 </elements>
 <signals>
@@ -1815,10 +1813,9 @@ design rules under a new name.</description>
 <contactref element="C2" pad="1"/>
 <contactref element="C4" pad="1"/>
 <contactref element="R30" pad="1"/>
-<wire x1="14.2" y1="11.65" x2="12.15" y2="11.65" width="0.8128" layer="16"/>
-<via x="31" y="11" extent="1-16" drill="0.4" diameter="0.8128"/>
-<wire x1="33.5" y1="10.524" x2="31.476" y2="10.524" width="0.6096" layer="16"/>
-<wire x1="31.476" y1="10.524" x2="31" y2="11" width="0.6096" layer="16"/>
+<wire x1="14.2" y1="11.65" x2="12.15" y2="11.65" width="0.6096" layer="16"/>
+<wire x1="28.476" y1="11.5" x2="26.5" y2="11.5" width="0.6096" layer="16"/>
+<via x="26.5" y="11.5" extent="1-16" drill="0.4" diameter="0.8128"/>
 <wire x1="14.87" y1="3.87" x2="14.15" y2="3.15" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="V-">
@@ -1855,8 +1852,9 @@ design rules under a new name.</description>
 <wire x1="13.2" y1="4.65" x2="12.33" y2="5.52" width="0.6096" layer="1"/>
 <wire x1="12.33" y1="7.84" x2="12.33" y2="5.52" width="0.6096" layer="1"/>
 <contactref element="C1" pad="2"/>
-<wire x1="18.3" y1="3.25" x2="13.3" y2="3.25" width="0.6096" layer="1"/>
+<wire x1="17.3" y1="3.25" x2="13.3" y2="3.25" width="0.6096" layer="1"/>
 <wire x1="13.3" y1="3.25" x2="13.2" y2="3.15" width="0.6096" layer="1"/>
+<contactref element="SJ1" pad="1"/>
 </signal>
 <signal name="N$31">
 <contactref element="IC1" pad="1"/>
@@ -1952,10 +1950,9 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="5"/>
 <contactref element="C1" pad="1"/>
 <contactref element="R25" pad="2"/>
-<wire x1="20.2" y1="3.25" x2="24.4" y2="3.25" width="0.6096" layer="1"/>
-<wire x1="20.2" y1="3.25" x2="20.2" y2="5.05" width="0.6096" layer="1"/>
-<wire x1="20.2" y1="5.05" x2="19.95" y2="5.3" width="0.6096" layer="1"/>
-<wire x1="19.95" y1="7.84" x2="19.95" y2="5.3" width="0.6096" layer="1"/>
+<wire x1="19.2" y1="3.25" x2="19.3" y2="3.25" width="0.4064" layer="1"/>
+<wire x1="19.2" y1="3.25" x2="19.95" y2="7.84" width="0" layer="19" extent="1-1"/>
+<wire x1="23.4" y1="3.2" x2="19.3" y2="3.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REFADJ">
 <contactref element="R29" pad="2"/>
@@ -1991,14 +1988,13 @@ design rules under a new name.</description>
 <wire x1="37.8" y1="4.62" x2="37.8" y2="5.8" width="0.6096" layer="1"/>
 <wire x1="37.8" y1="5.8" x2="39.8" y2="7.8" width="0.6096" layer="1"/>
 <wire x1="39.8" y1="10.245" x2="39.8" y2="7.8" width="0.6096" layer="1"/>
-<wire x1="26.3" y1="3.25" x2="33.89" y2="3.25" width="0.6096" layer="1"/>
-<wire x1="33.89" y1="3.25" x2="35.26" y2="4.62" width="0.6096" layer="1"/>
+<wire x1="25.3" y1="3.2" x2="35.26" y2="4.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="IC1" pad="9"/>
 <contactref element="SJ1" pad="2"/>
-<wire x1="33.5" y1="9" x2="31.27" y2="9" width="0.6096" layer="16"/>
-<wire x1="31.27" y1="9" x2="30.11" y2="7.84" width="0.6096" layer="16"/>
+<wire x1="30" y1="11.5" x2="30" y2="7.95" width="0.6096" layer="16"/>
+<wire x1="30" y1="7.95" x2="30.11" y2="7.84" width="0.6096" layer="16"/>
 </signal>
 </signals>
 </board>
